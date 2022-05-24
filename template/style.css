@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(155, 138, 63);
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 3px solid black;
+}
+ #p2{
+    margin-right: 10rem;
+}
+#p1{
+ margin-right: .5rem;
+ font-weight: bold;
+}
+nav 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgb(155, 138, 63);
+    height: 12.5vh;
+}
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.p3{
+    margin-left: .5rem;
+}
+nav .logo .img{
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+nav .logo .img img{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    margin-left: 2rem;
+}
+.menubar, .cross{
+    display: none;
+    cursor: pointer;
+}
+nav .menu ol{
+    display: flex;
+}
+nav .menu{
+    display: flex;
+    margin-left: 1rem;
+    width: 40vw;
+}
+nav .menu li{
+    list-style: none;
+    margin-left: 2rem;
+}
+nav .menu li a{
+text-decoration: none;
+color: black;
+font-size: 1.5rem;
+font-weight: bold;
+}
+nav .menu li a:hover{
+    transition: all .3s ease-in;
+    box-shadow: 0px 0px 3px 3px burlywood;
+}
+#body{
+    background-image: linear-gradient(rgb(218, 195, 95),rgb(92, 77, 13));
+    height: 80vh;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.p4{
+    width: 50%;
+    /* display: none; */
+}
+#btn1{
+    padding: 1rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#btn1:hover{
+    transition: all .3s ease-in;
+    box-shadow: 0px 0px 3px 3px burlywood;
+}
+.cards .cd1 .cdimg img{
+height: 120px;
+width: 120px;
+border-radius: 100%;
+
+}
+.cards .cd1 .cdimg{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+}
+.cards .cd1{
+    border: 1px solid black;
+    width: 17vw;
+    height: 170px;
+    background-image: linear-gradient(rgb(218, 195, 95),rgb(92, 77, 13));
+    font: bold;
+}
+.cards .cd1 .line{
+    border-top: 2px solid rgb(83, 76, 6);
+}
+.cards .cd2 .cdimg img{
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    
+    }
+    .cards .cd2 .cdimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    }
+    .cards .cd2{
+        border: 1px solid black;
+        width: 17vw;
+        height: 170px;
+        background-image: linear-gradient(rgb(218, 195, 95),rgb(92, 77, 13));
+        font: bold;
+    }
+    .cards .cd2 .line{
+        border-top: 2px solid rgb(83, 76, 6);
+    }
+    .cards .cd3 .cdimg img{
+        height: 120px;
+        width: 120px;
+        border-radius: 100%;
+        
+        }
+        .cards .cd3 .cdimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        }
+        .cards .cd3{
+            border: 1px solid black;
+            width: 17vw;
+            height: 170px;
+            background-image: linear-gradient(rgb(218, 195, 95),rgb(92, 77, 13));
+            font: bold;
+        }
+        .cards .cd3 .line{
+            border-top: 2px solid rgb(83, 76, 6);
+        }
+        .cards{
+            display: flex;
+            justify-content: space-around;
+            margin-top:2rem;
+        }
+.time table th,td{
+    border: 2px solid black;
+    padding: 1rem;
+}
+.time table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width:100%;
+    /* margin-left: 21rem; */
+    font-size: 1rem;
+    font-weight: bold;
+}
+.time h2{
+    text-align: center;
+    margin-top: 2rem;
+}
+.time table tr:nth-child(even){
+    background-color: khaki;
+}
+.time table th{
+    background-color: rgb(116, 107, 27);
+    font-size: 1.5rem;
+}
+footer{
+    background-image:linear-gradient(rgb(218, 195, 95),rgb(92, 77, 13));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    margin-top: 1rem;
+}
+footer .logoft img{
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+   
+}
+footer .logoft{
+    height:100%;
+    display: flex;
+    align-items: center;
+} 
+.icons i{
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+@media (max-width:490px){
+    .cards .cd1{
+        width: 27vw;
+    }
+    .cards .cd2{
+        width: 27vw;
+    }
+    .cards .cd3{
+        width: 27vw;
+    }
+} 
+@media (max-width:590px) 
+{
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        /* margin-inline: 1rem; */
+    }
+    .cd1,.cd2,.cd3{
+        margin-top:1rem ;
+    }
+}
+@media(max-width:700px)
+{
+    .cards .cd1 .cdimg img
+    {
+        height: 80px;
+        width: 80px;
+    }
+    .cards .cd2 .cdimg img
+    {
+        height: 80px;
+        width: 80px;
+    }
+    .cards .cd3 .cdimg img
+    {
+        height: 80px;
+        width: 80px;
+    }
+    nav{
+        justify-content: space-around;
+    }
+    .menubar{
+        display: flex;
+        position: relative;
+        right: 0%;
+    }
+    .menu ol{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position:absolute;
+        top: 21%;
+        right: 0;
+        left: 70%;
+        bottom: 0;
+        background-color: rgb(139, 141, 19);
+    }
+    .menu{
+        display: none;
+    }
+    .menu ol li{
+        margin: 1rem;
+    }
+    .menu ol li a{
+        color: black;
+    }
+    
+}
+@media (max-width:348px)
+{
+header#p1,#p2
+{
+    /* margin-left: 10rem; */
+    position: relative;
+    right: 0;
+}
+/* header #p2{
+    width: 40vw;
+    border: 1px solid black;
+} */
+}
+@media (max-width:1326px) {
+    nav .logo .img img{
+        height: 50px;
+        width:60px;
+    }
+    nav{
+        height: 18vh;
+    }
+    footer .logoft img{
+        height: 120px;
+        width: 120px;
+    }
+}
+@media (max-width:1110px) {
+    nav .menu{
+        margin-left: 15rem;
+        width: 70vw;
+        justify-content: center;
+    }
+    nav .menu li{
+        margin-left: 1rem;
+    }
+    #body{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .p4{
+        margin-top: 1rem;
+    }
+    #btn1{
+        padding: .5rem;
+    }
+}
+@media (max-width:810px)
+{
+     nav .menu{
+         margin-left: 7rem;
+     }
+     nav .menu li a{
+         font-size: 1.5rem;
+         font-weight: bold;
+     }
+}
